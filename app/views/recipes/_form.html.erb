@@ -1,0 +1,7 @@
+<%= simple_form_for :recipe do |f| %>
+  <%= f.input :ingredients, label: false,
+              placeholder: "Add your ingredients here e.g: 'chicken, potato, carrot'",
+              required: true,
+              input_html: { autofocus: true } %>
+  <%= f.submit 'Generate', class: "btn btn--secondary", input_html: { data: { controller: 'generate-recipe' } } %>
+<% end %>

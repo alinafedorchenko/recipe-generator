@@ -1,1 +1,16 @@
-// Entry point for your Sass build
+// Configuration
+@import "config/variables";
+@import "config/reset";
+
+// Components
+@import "components/btn";
+@import "components/form";
+@import "components/turbo_progress_bar";
+
+// Layouts
+@import "layouts/container";
+@import "layouts/header";
+@import "layouts/header";
+
+@import 'pages/recipes';
+
