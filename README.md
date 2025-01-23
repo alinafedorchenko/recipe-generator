@@ -1,24 +1,42 @@
-# README
+# Rails Application Documentation
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
 
-Things you may want to cover:
+This application serves as a recipe generation app powered by the Anthropic API. Users can generate recipes by entering a list of ingredients. 
 
-* Ruby version
+To make it work, you must add your Anthropic API key to the .env file
 
-* System dependencies
+## Prerequisites
+Ensure the following tools and versions are installed before proceeding:
 
-* Configuration
+- **Ruby**: `3.1.0`
+- **Rails**: Confirm the Rails version by running `rails -v` in the application directory.
+- **Bundler**: Run `gem install bundler` to ensure Bundler is installed.
+- **Node.js** and **Yarn**: Required for managing JavaScript assets.
 
-* Database creation
+---
 
-* Database initialization
+## Setting Up the Application
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/alinafedorchenko/recipe-generator.git
+   cd recipe-generator
+   ```
 
-* How to run the test suite
+2. **Install Dependencies**:
+   Run the following command to install all required gems:
+   ```bash
+   bundle install
+   ```
 
-* Services (job queues, cache servers, search engines, etc.)
+3. **Install JavaScript Dependencies and precompile assets**:
+   ```bash
+   yarn install
+   rails assets:precompile
+   ```
 
-* Deployment instructions
-
-* ...
+4. **Start the Server**:
+   ```bash
+   rails server
+   ```
+   Access the application at [http://localhost:3000](http://localhost:3000).
